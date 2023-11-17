@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+::placeholder{
+    opacity: 50%;
+}
+
+.form_cd{
+    width: 380px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+}
+
+.form_cd h1
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form input{
+    height: 23px;
+    padding: 5px;
+}
+
+form input[type="text"]{
+    margin: 5px 5px 5px 8px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+form input[type="submit"]{
+    margin-top: 15px;
+    border: none;
+}
+
+.field_cpf{
+    width: 102px;
+}
+
+.field_creci{
+    width: 230px;
+}
+
+.field_nome{
+    width: 350px;
+}
+
+.button_enviar{
+    width: 350px;
+    color: white;
+    background-color: rgb(51, 58, 73); 
+    font-size: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.dados_formulario{
+    margin-left: 5px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form_cd {
+        width: 80%;
+    }
+    
+    .field_cpf,
+    .field_creci,
+    .field_nome,
+    .button_enviar {
+        width: 100%;
+        max-width: none;
+    }
+}
